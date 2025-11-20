@@ -123,7 +123,7 @@ export default function Transcriber() {
         setTranslated(data.translated);
         setStatus("translated");
       } else {
-        setTranslated("Translation failed");
+        setTranslated("Translation failed, You exceeded your current quota, please check your plan and billing details.");
         setStatus("error");
       }
     } catch (err) {
